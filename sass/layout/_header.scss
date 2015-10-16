@@ -1,0 +1,30 @@
+.header {
+  height: $bar-header-height;
+  background-color: $dark;
+
+  & > h1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    margin: 0 20px;
+    min-width: 30px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: $bar-header-height;
+    color: $white;
+    font-size: $bar-title-font-size;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .header {
+    height: ($bar-header-height / 2);
+
+    & > h1 {
+      line-height: ($bar-header-height / 2);
+    }
+  }
+}

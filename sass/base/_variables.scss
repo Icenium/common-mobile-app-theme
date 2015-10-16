@@ -1,0 +1,88 @@
+// Colors
+$white:                           #ffffff !default;
+$black:                           #000000 !default;
+$light:                           #f4f6f7 !default;
+$dark:                            #2d3e50 !default;
+$accent:                          #3598db !default;
+$positive:                        #1bbc9b !default;
+$negative:                        #e84c3d !default;
+
+// Fonts
+$font-family-segoe:               "Segoe UI", sans-serif !default;
+$font-family-serif:               serif !default;
+$font-family-monospace:           monospace !default;
+$font-family-base:                $font-family-segoe !default;
+
+$font-size-base:                  14px !default;
+$font-size-small:                 12px !default;
+$font-size-large:                 18px !default;
+
+$line-height-base:                1.428571429 !default; // 20/14
+$line-height-computed:            floor($font-size-base * $line-height-base) !default; // ~20px
+$line-height-small:               1.5 !default;
+$line-height-large:               1.33 !default;
+
+$headings-font-family:            $font-family-base !default;
+$headings-font-weight:            500 !default;
+$headings-line-height:            1.2 !default;
+
+// Bars
+$bar-header-height:               80px !default;
+$bar-footer-height:               ($bar-header-height / 4) !default;
+$bar-title-font-size:             21px !default;
+$bar-padding:                     20px !default;
+
+
+// Grids
+$grid-padding:                    20px !default;
+$grid-responsive-sm-break:        567px !default;  // smaller than landscape phone
+$grid-responsive-md-break:        767px !default;  // smaller than portrait tablet
+$grid-responsive-lg-break:        1023px !default; // smaller than landscape tablet
+
+// Buttons
+$button-border-radius:            2px !default;
+$button-border-width:             1px !default;
+
+$button-font-size:                14px !default;
+$button-height:                   28px !default;
+$button-padding:                  12px !default;
+
+$button-default-text:             $dark !default;
+$button-default-bg:               $white !default;
+$button-default-border:           rgba($dark, .3) !default;
+$button-default-active-bg:        $light !default;
+$button-default-active-border:    rgba($dark, .5) !default;
+
+$button-accent-text:              $white !default;
+$button-accent-bg:                $accent !default;
+$button-accent-border:            $accent !default;
+$button-accent-active-bg:         darken($accent, 10%) !default;
+$button-accent-active-border:     darken($accent, 10%) !default;
+
+$button-positive-text:            $white !default;
+$button-positive-bg:              $positive !default;
+$button-positive-border:          $positive !default;
+$button-positive-active-bg:       darken($positive, 10%) !default;
+$button-positive-active-border:   darken($positive, 10%) !default;
+
+$button-negative-text:            $white !default;
+$button-negative-bg:              $negative !default;
+$button-negative-border:          $negative !default;
+$button-negative-active-bg:       darken($negative, 10%) !default;
+$button-negative-active-border:   darken($negative, 10%) !default;
+
+// Inputs
+$input-border-radius:             0px !default;
+$input-border-width:              1px !default;
+
+$input-font-size:                 14px !default;
+$input-height:                    28px !default;
+$input-padding:                   12px 16px !default;
+
+$input-default-text:              $dark !default;
+$input-default-bg:                $white !default;
+$input-default-border:            rgba($dark, .3) !default;
+$input-default-active-bg:         $white !default;
+$input-default-active-border:     rgba($dark, .5) !default;
+
+$input-color-placeholder:         lighten($dark, 40%) !default;

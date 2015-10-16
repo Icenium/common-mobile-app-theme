@@ -1,0 +1,42 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"] {
+  display: block;
+  color: $dark;
+  vertical-align: middle;
+  font-size: $font-size-base;
+  line-height: $font-size-base + 2;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+  line-height: normal;
+}
+
+.input {
+  @include input-style(
+    $input-default-bg,
+    $input-default-border,
+    $input-default-active-bg,
+    $input-default-active-border,
+    $input-default-text);
+
+  width: 100%;
+  height: $input-height;
+  border-radius: $input-border-radius;
+  border-width: $input-border-width;
+  border-style: solid;
+  font-size: $input-font-size;
+  padding: $input-padding;
+
+  input {
+    border-radius: 0;
+    display: flex;
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}

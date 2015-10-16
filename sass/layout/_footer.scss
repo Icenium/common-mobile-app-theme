@@ -1,0 +1,21 @@
+.footer {
+  height: $bar-footer-height;
+  background-color: $black;
+
+  & > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    margin: 0 $bar-padding;
+    min-width: 30px;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: normal;
+    line-height: $bar-footer-height;
+    color: rgba($white, .7);
+    font-size: $font-size-small;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "common-samples-theme",
+  "description": "Common Samples Theme",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Icenium/common-samples-theme"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.0",
+    "grunt": "*",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-watch": "*",
+    "grunt-postcss": "^0.6.0",
+    "grunt-sass": "^1.0.0"
+  }
+}

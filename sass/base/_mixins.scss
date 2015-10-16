@@ -1,0 +1,44 @@
+// Clearfix
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Button Mixin
+@mixin button-style($bg-color, $border-color, $active-bg-color, $active-border-color, $color) {
+  border-color: $border-color;
+  background-color: $bg-color;
+  color: $color;
+
+  // Desktop only
+  &:hover {
+    color: $color;
+    text-decoration: none;
+  }
+
+  &:active {
+    border-color: $active-border-color;
+    background-color: $active-bg-color;
+  }
+}
+
+// Input Mixin
+@mixin input-style($bg-color, $border-color, $active-bg-color, $active-border-color, $color) {
+  border-color: $border-color;
+  background-color: $bg-color;
+  color: $color;
+
+  &:focus {
+    border-color: $active-border-color;
+    background-color: $active-bg-color;
+  }
+}

@@ -1,0 +1,65 @@
+.button {
+  @include button-style(
+    $button-default-bg,
+    $button-default-border,
+    $button-default-active-bg,
+    $button-default-active-border,
+    $button-default-text);
+
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 $button-padding;
+  width: 100%;
+
+  min-width: ($button-padding * 3) + $button-font-size;
+
+  border-width: $button-border-width;
+  border-style: solid;
+  border-radius: $button-border-radius;
+
+  vertical-align: top;
+  text-align: center;
+
+  text-overflow: ellipsis;
+  font-size: $button-font-size;
+  line-height: $button-height - $button-border-width + 1px;
+
+  cursor: pointer;
+
+  &:after {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    content: ' ';
+  }
+
+  &.-accent {
+    @include button-style(
+      $button-accent-bg, 
+      $button-accent-border, 
+      $button-accent-active-bg, 
+      $button-accent-active-border, 
+      $button-accent-text);
+  }
+
+  &.-positive {
+    @include button-style(
+      $button-positive-bg, 
+      $button-positive-border, 
+      $button-positive-active-bg, 
+      $button-positive-active-border, 
+      $button-positive-text);
+  }
+
+  &.-negative {
+    @include button-style(
+      $button-negative-bg, 
+      $button-negative-border, 
+      $button-negative-active-bg, 
+      $button-negative-active-border, 
+      $button-negative-text);
+  }
+}
