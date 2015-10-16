@@ -26,10 +26,6 @@ module.exports = function (grunt) {
             }
         },
         cssmin: {
-            options: {
-                shorthandCompacting: false,
-                roundingPrecision: -1
-            },
             dist: {
                 src: 'styles/theme.css',
                 dest: 'styles/theme.min.css'
