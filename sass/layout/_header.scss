@@ -17,12 +17,10 @@
     color: $white;
     font-size: $bar-title-font-size;
   }
-}
 
-@media screen and (orientation:landscape) {
-  .header {
+  @media #{$mobile-landscape} {
     height: ($bar-header-height / 2);
-
+    
     & > h1 {
       line-height: ($bar-header-height / 2);
     }
