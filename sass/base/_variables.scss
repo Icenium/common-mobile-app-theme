@@ -9,19 +9,16 @@ $negative:                        #e84c3d !default;
 
 // Fonts
 $font-family-opensans:            'Open Sans', sans-serif !default;
-$font-family-serif:               serif !default;
-$font-family-monospace:           monospace !default;
 $font-family-base:                $font-family-opensans !default;
 
-$font-size-base:                  14px !default;
 $font-size-small:                 12px !default;
+$font-size-base:                  14px !default;
 $font-size-large:                 18px !default;
 
 $line-height-base:                1.428571429 !default; // 20/14
 $line-height-computed:            floor($font-size-base * $line-height-base) !default; // ~20px
-$line-height-small:               1.5 !default;
-$line-height-large:               1.33 !default;
 
+// Headings
 $headings-font-family:            $font-family-base !default;
 $headings-font-weight:            500 !default;
 $headings-line-height:            1.2 !default;
@@ -32,12 +29,8 @@ $bar-footer-height:               ($bar-header-height / 4) !default;
 $bar-title-font-size:             21px !default;
 $bar-padding:                     20px !default;
 
-
 // Grids
 $grid-padding:                    20px !default;
-$grid-responsive-sm-break:        567px !default;  // smaller than landscape phone
-$grid-responsive-md-break:        767px !default;  // smaller than portrait tablet
-$grid-responsive-lg-break:        1023px !default; // smaller than landscape tablet
 
 // Buttons
 $button-border-radius:            2px !default;
