@@ -11,10 +11,6 @@
     }
   }
 
-  &.-offset {
-    padding-top: 60px;
-  }
-
   &.-wrap {
     flex-wrap: wrap;
   }
@@ -54,12 +50,17 @@
   @media #{$tablet-desktop} {
     width: 70%;
     margin: 0 auto;
+    padding: 20px;
   }
 }
 
 .row + .row {
   margin-top: ($grid-padding / 2) * -1;
   padding-top: 0;
+
+  @media #{$tablet-desktop} {
+    margin-top: (10px) * -1;
+  }
 }
 
 .col {
@@ -67,6 +68,10 @@
   display: block;
   padding: ($grid-padding / 2);
   width: 100%;
+
+  @media #{$tablet-desktop} {
+    padding: 20px;
+  }
 
   &.-text-left {
     text-align: left;
