@@ -73,6 +73,11 @@
     padding: 20px;
   }
 
+  &.-stretch-item {
+    display: flex;
+    align-items: stretch;
+  }
+
   &.-text-left {
     text-align: left;
   }
